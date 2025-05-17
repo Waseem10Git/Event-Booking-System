@@ -14,7 +14,7 @@ This is the frontend part of the Event Booking System built using React and Vite
 
 ### 1. Clone the repository
 
-bash
+```bash
 git clone https://github.com/your-username/event-booking-frontend.git
 cd event-booking-frontend
 
