@@ -1,0 +1,86 @@
+.profile {
+    background-color: #4f586b;
+    color: #f0f4fa;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 18px;
+    position: relative;
+}
+
+.profile-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: var(--background-light);
+  color: var(--text-dark);
+  width: max-content;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  z-index: 100;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+}
+
+body.rtl .profile-menu {
+  left: 0;
+  right: auto;
+  text-align: right;
+}
+
+.profile-menu hr {
+  width: 100%;
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 5px 0;
+}
+
+.profile-menu a,
+.profile-menu button {
+  text-decoration: none;
+  color: var(--text-color);
+  padding: 10px 15px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.profile-menu a:hover,
+.profile-menu button:hover {
+  background-color: lightgray;
+}
+
+body.dark-mode .profile-menu a:hover,
+body.dark-mode .profile-menu button:hover {
+  background-color: #4f586b;
+}
+
+.my-bookings {
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+}
+
+.profile-menu button.sign-out {
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
+  color: #ef4444;
+}
+
+@media (max-width: 768px) {
+  .profile-menu a, .profile-menu button {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-menu a, .profile-menu button {
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,137 @@
+.event-details-container {
+  padding: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.event-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+
+.event-icon {
+  font-size: 2.2rem;
+  color: var(--accent-color);
+}
+
+.event-details-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  background-color: var(--background-white);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+}
+
+.event-image-wrapper {
+  flex: 1 1 55%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.event-details-image {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  max-height: 400px;
+}
+
+.event-description {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  color: var(--text-color);
+  text-align: start;
+  line-height: 2;
+}
+
+.event-info-card {
+  flex: 1 1 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 10px;
+}
+
+.event-info-card p {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  margin: 20px 0;
+}
+
+.event-info-card p span {
+  font-size: 20px;
+  color: var(--accent-color);
+  margin-right: 10px;
+}
+
+.booked-label {
+  color: green;
+  font-weight: bold;
+}
+
+.booked-button,
+.book-now-button {
+  margin-top: 15px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--accent-color);
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.book-now-button:hover,
+.booked-button:hover {
+  background-color: #3578e5;
+}
+
+.divider-line {
+  margin: 40px 0 20px;
+  border-top: 1px solid var(--border-color);
+}
+
+.other-events-section h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .event-details-card {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .event-description {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .event-header {
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+
+  .booked-button,
+  .book-now-button {
+    width: 100%;
+  }
+
+  .event-description {
+    font-size: 1rem;
+  }
+
+  .event-info-card p {
+    font-size: 1rem;
+  }
+}

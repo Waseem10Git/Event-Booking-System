@@ -1,0 +1,101 @@
+.create-event-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.form-group textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form-group textarea:focus, .form-group textarea:hover {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.submit-btn {
+  padding: 12px;
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+.tags-input-wrapper {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.tags-input-wrapper input {
+  flex: 1;
+}
+
+.tags-input-wrapper button {
+  padding: 12px 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.tags-preview {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tag-chip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #007bff;
+  color: white;
+  padding: 7px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.2s;
+}
+
+.tag-chip:hover {
+  background-color: #0056b3;
+}
+
+body.dark-mode .tag-chip {
+  background-color: #0056b3;
+}
+
+/* Dark Mode Support */
+
+body.dark-mode .form-group input,
+body.dark-mode .form-group textarea {
+  background-color: #2c2c2c;
+  color: #fff;
+  border: 1px solid #555;
+}

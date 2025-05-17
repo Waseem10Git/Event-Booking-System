@@ -1,0 +1,59 @@
+.congratulations-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--background);
+  color: var(--text-color);
+  text-align: center;
+}
+
+.congratulations-card {
+  background-color: var(--form-bg);
+  border-radius: 10px;
+  padding: 40px 30px;
+  max-width: 600px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-out;
+}
+
+.congratulations-card h2 {
+  font-size: 2.5rem;
+  color: var(--accent);
+  margin-bottom: 20px;
+}
+
+.congratulations-card p {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+.back-to-home-button {
+  padding: 12px 25px;
+  background-color: var(--accent);
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.back-to-home-button:hover {
+  background-color: #3578e5;
+}
+
+/* Animation for fade-in effect */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

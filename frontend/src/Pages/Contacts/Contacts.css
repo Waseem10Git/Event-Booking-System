@@ -1,0 +1,136 @@
+/* :root {
+  --bg-light: #ffffff;
+  --bg-dark: #1e1e1e;
+  --text-light: #f9f9f9;
+  --text-dark: #222;
+  --accent: #4a90e2;
+} */
+/* 
+body.light {
+  --bg: var(--backgound-light);
+  --text: var(--text-dark);
+}
+
+body.dark {
+  --bg: var(--background-dark);
+  --text: var(--text-light);
+} */
+
+.contact-container {
+  background-color: var(--backgound-light);
+  color: var(--text-dark);
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.contact-container h2 {
+  color: var(--primary-color);
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.contact-container p {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+.contact-item {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  box-shadow: 0 0 10px #888888;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.contact-item:hover {
+  transform: translateX(-10px);
+}
+
+.contact-item a {
+  color: var(--primary-color);
+  text-decoration: none;
+  margin-left: 5px;
+  transition: color 0.3s;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+.contact-text {
+  flex-grow: 8;
+  text-align: center;
+}
+
+.contact-icon {
+  font-size: 3rem;
+  margin-right: 10px;
+  color: var(--primary-color);
+  min-width: 100px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+/* Tablets and below */
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 30px 20px;
+  }
+
+  .contact-container h2 {
+    font-size: 1.7rem;
+  }
+
+  .contact-item {
+    font-size: 1rem;
+    padding: 10px
+  }
+
+  .contact-icon {
+    min-width: 80px;
+    font-size: 2.5rem;
+  }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+  .contact-container {
+    padding: 25px 15px;
+  }
+
+  .contact-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact-item {
+    font-size: 0.95rem;
+    text-align: center;
+  }
+
+  .contact-item a {
+    display: block;
+    margin-left: 0;
+    margin-top: 5px;
+  }
+
+  .contact-icon {
+    min-width: 60px;
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,46 @@
+.page {
+    padding: 20px;
+    width: 100%;
+}
+
+.page h1 {
+    text-align: center;
+    width: 100%;
+    font-size: 5rem;
+    font-weight: 800;
+    color: var(--primary-color);
+}
+
+.page .terms {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    font-size: 2rem;
+    box-shadow: 0 0 10px #888888;
+}
+
+.page .terms ul {
+    list-style-type: none;
+}
+
+@media (max-width: 768px) {
+    .page h1 {
+        font-size: 4rem;
+        font-weight: 700;
+    }
+
+    .page .terms {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .page h1 {
+        font-size: 3rem;
+        font-weight: 600;
+    }
+
+    .page .terms {
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,13 @@
+export { default as Login } from './Login/Login.jsx';
+export { default as Register } from './Register/Register.jsx';
+export { default as Home } from './Home/Home.jsx';
+export { default as EventDetails } from './EventDetails/EventDetails.jsx';
+export { default as Congratulations } from './Congratulations/Congratulations.jsx';
+export {default as ManageEvents} from './ManageEvents/ManageEvents.jsx';
+export { default as CreateEvent } from './CreateEvent/CreateEvent.jsx';
+export { default as EditEvent } from './EditEvent/EditEvent.jsx';
+export { default as NotFound } from './NotFound/NotFound.jsx';
+export { default as UserBookings } from './UserBookings/UserBookings.jsx';
+export { default as Contacts } from './Contacts/Contacts.jsx';
+export { default as Terms } from './Terms/Terms.jsx';
+export {default as Privacy} from './Privacy/Privacy.jsx';

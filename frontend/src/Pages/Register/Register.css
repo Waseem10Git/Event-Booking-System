@@ -1,0 +1,93 @@
+/* src/styles/register.css */
+
+body {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  background-color: var(--background-light);
+  color: var(--text-dark);
+  margin: 0;
+  padding: 0;
+}
+
+.register-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-light);
+  padding: var(--spacing-lg);
+}
+
+.register-form {
+  background-color: var(--background-white, #fff);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius);
+  box-shadow: 0 0 10px #888888;
+  width: 100%;
+  max-width: 400px;
+  color: var(--text-dark);
+  box-sizing: border-box;
+}
+
+.register-form h2 {
+  font-size: var(--font-size-heading);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--spacing-lg);
+  text-align: center;
+}
+
+button[type="submit"] {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: var(--spacing-sm) var(--spacing-md);
+  font-size: var(--font-size-base);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  width: 100%;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.register-form p {
+  margin-top: var(--spacing-md);
+}
+
+.register-form p span {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .register-form {
+    padding: var(--spacing-md);
+    max-width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .register-container {
+    align-items: flex-start;
+    padding-top: 80px;
+  }
+
+  .register-form h2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-group input {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  button[type="submit"] {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

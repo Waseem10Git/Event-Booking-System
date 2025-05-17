@@ -1,0 +1,43 @@
+/* Global variables */
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --accent-color: #17a2b8;
+
+  --background-light: #F5F7FC;
+  --background-dark: #2A2A2A;
+
+  --text-light: #f8f9fa;
+  --text-dark: #212529;
+
+  --border-color: #ccc;
+  --background-white: #ffffff;
+
+  --error-color: #dc3545;
+  --success-color: #28a745;
+
+  --font-family-base: 'Segoe UI', sans-serif;
+  --font-size-base: 16px;
+  --font-size-heading: 24px;
+  --font-weight-bold: 700;
+  --line-height: 1.5;
+
+  --spacing-xs: 4px;
+  --spacing-sm: 10px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+
+  --container-width: 1200px;
+  --border-radius: 8px;
+}
+
+/* Dark mode overrides */
+body.dark-mode {
+  --background-light: #1A1A1A;
+  --text-dark: #f8f9fa;
+  --primary-color: #0d6efd;
+  --secondary-color: #adb5bd;
+  --border-color: #333;
+  --background-white: #2a2a2a;
+}
